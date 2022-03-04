@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+    height: 100vh;
+    grid-template-columns: 210px;
+    grid-template-rows: 100px;
+    color: whitesmoke;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(69, 55, 82);
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#sidebar{
+    background-color: rgb(50, 42, 58);
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width:210px;
+}
+
+#sidebar #logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+#sidebar :first-child{
+    width: 80px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#sidebar #logo img{
+    filter: invert(100%) brightness(95%) contrast(103%);
+    width: 35px;
+}
+
+#sidebar #logo #musify{
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+#sidebar #sidebar-menu :first-child{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home p{
+    padding-top: 1.2rem;
+    padding-left: 0.7rem;
+}
+
+#playlists{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#playlists p{
+    padding-top: 1.2rem;
+    padding-left: 0.7rem;
+}
+
+#sidebar #sidebar-menu .img-side{
+    width: 2rem;  
+    margin-left: 2rem;
+    filter: invert(98%) brightness(95%) contrast(103%);  
+}
+
+header nav{
+    font-size: 1.3rem;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+header nav input{
+    cursor: pointer;
+    margin-top: -0.5rem;
+    margin-left: 4rem;
+    background-color: rgb(147, 89, 206);
+    font-size: 1rem;
+    color: rgb(236, 235, 236);
+    padding: 0.7rem 1.7rem;
+    border: 1px solid rgb(147, 89, 206);
+    border-radius:32px;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(34, 18, 49);
+}
+
+main #artistas figure{
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main #artistas figure .preview{
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+main #artistas figure .preview .nome-musica{
+    font-size: 1.3rem;
+}
+
+main #artistas figure .preview input{
+    cursor: pointer;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 4.8rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: rgb(147, 89, 206);
+    padding: 0.5rem 1rem;
+    border: 3px solid rgb(96, 45, 148);
+    border-radius: 32px;
+}
+
+main #artistas #outros{
+    margin-left: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+main #artistas #outros input{
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: rgb(147, 89, 206);
+    padding: 0.5rem 1rem;
+    border: 3px solid rgb(96, 45, 148);
+    border-radius: 32px;
+}
+
+main #artistas figure .preview audio{
+    padding-left: 1.5rem;
+}
+
+main #artistas figure figcaption{
+    margin-top: 0.5rem;
+}
+
+main #artistas p{
+    margin: 1rem 1.5rem;
+    font-size: 2rem;
+}
+
+main #artistas .artista p{
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+main #artistas img{
+    margin-top: 1rem;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(147, 89, 206);
+    border-radius: 5%;
+}
+
+main #artistas .artista{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #artistas span{
+    font-size: 1.6rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(50, 42, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer #redes-sociais{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+footer #redes-sociais #links{
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+footer #redes-sociais #links #linkedin{
+    margin-left: 1rem;
+}
+
+footer #creditos{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+footer img{
+    width: 80px;
+    height: 80px; 
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
