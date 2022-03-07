@@ -66,25 +66,12 @@ a{
     margin-bottom: 1.5rem;
 }
 
-
-#home{
+#sidebar #sidebar-menu .sidebar-figures{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-#home p{
-    padding-top: 1.2rem;
-    padding-left: 0.7rem;
-}
-
-#playlists{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#playlists p{
+.sidebar-figures p{
     padding-top: 1.2rem;
     padding-left: 0.7rem;
 }
@@ -114,22 +101,34 @@ header nav input{
     border-radius:32px;
 }
 
+header nav input:hover{
+    border: 1px solid rgb(236, 235, 236);
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
+header nav :first-child:hover{
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
 main{
     grid-area: main;
     background-color: rgb(34, 18, 49);
 }
 
 main #artistas figure{
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-main #artistas figure .preview{
-    width: 100%;
-    margin-left: 0.5rem;
+main #artistas figure .preview input:hover{
+    border: 3px solid rgb(236, 235, 236);
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 main #artistas figure .preview .nome-musica{
@@ -165,6 +164,12 @@ main #artistas #outros input{
     border-radius: 32px;
 }
 
+main #artistas #outros input:hover{
+    border: 3px solid rgb(236, 235, 236);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
 main #artistas figure .preview audio{
     padding-left: 1.5rem;
 }
@@ -179,7 +184,7 @@ main #artistas p{
 }
 
 main #artistas .artista p{
-    margin: 1rem 0;
+    margin: 1rem;
     font-size: 1rem;
 }
 
