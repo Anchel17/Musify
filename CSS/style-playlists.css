@@ -71,6 +71,7 @@ a{
     flex-direction: row;
     align-items: center;
 }
+
 .sidebar-figures p{
     padding-top: 1.2rem;
     padding-left: 0.7rem;
@@ -729,7 +730,7 @@ nav{
 
     #sidebar #sidebar-menu :first-child{
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
 
 
