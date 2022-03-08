@@ -578,6 +578,20 @@ nav{
 }
 
 @media only screen and (max-width: 375px){
+    header nav{
+        font-size: 0.6rem;
+        padding-top: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    header nav input{
+        margin-top: 0.8rem;
+        margin-left: 0;
+        font-size: 0.6rem;
+        padding: 0.2rem 1rem;
+        border-radius:24px;
+    }
+    
     main #artistas p{
         font-size: 1.5rem;
     }
@@ -620,13 +634,17 @@ nav{
     }
 
     header nav{
-        font-size: 0.6rem;
-        padding-top: 1.5rem;
+        font-size: 0.5rem;
+        padding-top: 1.9rem;
+        padding-right: 0.5rem;
     }
 
     header nav input{
-        font-size: 0.6rem;
-        padding: 0.2rem 1rem;
+        margin-top: 0.8rem;
+        margin-left: 0;
+        font-size: 0.5rem;
+        padding: 0.2rem 0.8rem;
+        border-radius:22px;
     }
 
     main #artistas span{
@@ -682,7 +700,7 @@ nav{
 
     header nav{
         font-size: 0.5rem;
-        padding-top: 1.5rem;
+        padding-top: 1.9rem;
     }
 
     header nav input{
