@@ -592,7 +592,7 @@ nav{
 
     header nav{
         font-size: 0.8rem;
-        padding-top: 1rem;
+        padding-top: 1.7rem;
     }
 
     header nav input{
@@ -627,7 +627,7 @@ nav{
 @media only screen and (max-width: 375px){
     header nav{
         font-size: 0.6rem;
-        padding-top: 1.5rem;
+        padding-top: 2.2rem;
         padding-right: 1rem;
     }
 
